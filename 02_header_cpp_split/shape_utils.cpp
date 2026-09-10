@@ -8,12 +8,13 @@
 // file compiles just fine on its own. The problem only shows up when
 // the linker tries to combine object files and finds two bodies for
 // one name.
-
+#define USE_MATH_DEFINES
+#include <cmath>
 #include "shape_utils.h"   // pull in the promises we're about to keep
 
 double circleArea(double radius){
     // TODO: return the area of a circle with this radius (pi * radius * radius)
-    return 3.14 * radius *radius;
+    return M_PI * radius *radius;
 }
 
 double rectangleArea(double width, double height) {
