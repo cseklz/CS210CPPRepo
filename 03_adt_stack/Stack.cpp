@@ -16,7 +16,7 @@ void Stack::push(int value) {
 
 int Stack::pop() {
 	if (topIndex == -1) {
-		std::cout << "Stack is empty" << std::endl;
+		std::cout << "Stack is empty: ";
 		return -1;
 	}
 
@@ -25,7 +25,7 @@ int Stack::pop() {
 
 int Stack::peek() const {
 	if (topIndex == -1) {
-		std::cout << "Stack is empty" << std::endl;
+		std::cout << "Stack is empty: ";
 		return -1;
 	}
 
