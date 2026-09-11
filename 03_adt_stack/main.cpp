@@ -12,6 +12,7 @@ int main()
     std::cout << stack.isEmpty() << std::endl;
     std::cout << !stack.isFull() << std::endl;
     std::cout << (stack.size() == 0) << std::endl;
+    std::cout << stack.size() << std::endl;
     std::cout << '\n';
 
     stack.push(42);
@@ -21,6 +22,7 @@ int main()
     std::cout << (stack.size() == 1) << std::endl;
     std::cout << (stack.peek() == 42) << std::endl;
     std::cout << (stack.size() == 1) << std::endl;
+    std::cout << stack.size() << std::endl;
     std::cout << '\n';
 
     stack.push(10);
@@ -34,6 +36,7 @@ int main()
     std::cout << (stack.pop() == 42) << std::endl;
     std::cout << stack.isEmpty() << std::endl;
     std::cout << (stack.size() == 0) << std::endl;
+    std::cout << stack.size() << std::endl;
     std::cout << '\n';
 
     for (int value = 0; value < 100; ++value) {
@@ -45,6 +48,7 @@ int main()
     std::cout << !stack.isEmpty() << std::endl;
     std::cout << (stack.size() == 100) << std::endl;
     std::cout << (stack.peek() == 99) << std::endl;
+    std::cout << stack.size() << std::endl;
     std::cout << '\n';
 
     bool correctOrder = true;
@@ -59,6 +63,7 @@ int main()
     std::cout << stack.isEmpty() << std::endl;
     std::cout << !stack.isFull() << std::endl;
     std::cout << (stack.size() == 0) << std::endl;
+    std::cout << stack.size() << std::endl;
     std::cout << '\n';
 
     stack.push(5);
@@ -70,6 +75,7 @@ int main()
     std::cout << (removed == 6) << std::endl;
     std::cout << (stack.peek() == 7) << std::endl;
     std::cout << (stack.size() == 2) << std::endl;
+    std::cout << stack.size() << std::endl;
     std::cout << '\n';
 
     return 0;
