@@ -1,18 +1,16 @@
 #pragma once
 
-#include <vector>
-
 class Stack {
 public:
     Stack();
     void push(int value);
     int pop();
-    int peek() const;
-    bool isEmpty() const;
-    bool isFull() const;
-    int size() const;
+    [[nodiscard]] int peek() const;
+    [[nodiscard]] bool isEmpty() const;
+    [[nodiscard]] bool isFull() const;
+    [[nodiscard]] int size() const;
 
 private:
-    int data[100];
+    int data[100]{};
     int topIndex;
 };
