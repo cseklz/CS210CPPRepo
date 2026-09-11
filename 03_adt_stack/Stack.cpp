@@ -7,15 +7,16 @@ Stack::Stack() {
 }
 
 void Stack::push(int value) {
-	if (topIndex == 99) {
+	if (isFull()) {
 		std::cout << "Stack is full" << std::endl;
+		return;
 	}
 
 	data[++topIndex] = value;
 }
 
 int Stack::pop() {
-	if (topIndex == -1) {
+	if (isEmpty()) {
 		std::cout << "Stack is empty: ";
 		return -1;
 	}
@@ -24,7 +25,7 @@ int Stack::pop() {
 }
 
 int Stack::peek() const {
-	if (topIndex == -1) {
+	if (isEmpty()) {
 		std::cout << "Stack is empty: ";
 		return -1;
 	}
